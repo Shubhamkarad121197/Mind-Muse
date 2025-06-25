@@ -33,7 +33,7 @@ function exploreMoodPage() {
       <button id='sadBtn'>😢 Sad</button>
       <button id='angryBtn'> 😤 Angry</button>
       <button id='tiredBtn'> 😤 Tired</button>
-      <button id='BackBtn'>Back</button>
+      
 
     `;
   mainContainer.append(exploreMoodSection);
@@ -78,17 +78,7 @@ function exploreMoodPage() {
     generateQuoteBox("tired",exploreMoodSection);
   });
 
-  let backBtn= exploreMoodSection.querySelector("#backBtn");
-  backBtn.addEventListener("click", function () {
-    exploreMoodSection.style.background = "#dfe6e9";
-    exploreMoodSection.style.minHeight = "100vh";
-    exploreMoodSection.style.padding = "50px 20px";
-    exploreMoodSection.style.textAlign = "center";
 
-    initialize()
-
-   
-  });
  
 }
 
